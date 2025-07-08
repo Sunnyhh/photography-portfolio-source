@@ -1,0 +1,61 @@
+/* Make the header a flex container */
+header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 1rem !important;
+    width: 100% !important;
+}
+
+/* Site title/logo stays on the left */
+header > a.btn {
+    flex: 0 0 auto;
+}
+
+/* Container for menu button - move to right */
+header > ul {
+    flex: 0 0 auto;
+    margin-left: auto !important;
+}
+
+/* Make the menu always visible and align right */
+#menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    text-align: right !important;
+}
+
+/* Hide the hamburger menu button */
+#menu-toggle {
+    display: none !important;
+}
+
+/* Style the menu as horizontal navbar */
+#menu ul {
+    display: flex !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+#menu li {
+    display: inline-block !important;
+}
+
+#menu a {
+    text-decoration: none !important;
+    padding: 0.5rem 1rem !important;
+    color: inherit !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+#menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 4px !important;
+}

@@ -6,7 +6,7 @@ theme = 'hugo-gallery'
 [params]
   title = "Sunny's Photography"
   description = "Aviation, travel, and everyday moments captured through my lens"
-  author = "Ge (Sunny) Li"
+  customCSS = ["css/custom.css"]
   
 [params.author]
   name = "Ge (Sunny) Li"
@@ -15,3 +15,24 @@ theme = 'hugo-gallery'
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "https://sunnyhh.github.io"
+    weight = 1
+
+  [[menu.main]]
+    name = "Photography"
+    url = '/'
+    weight = 2
+
+  [[menu.main]]
+    name = "Aviation"
+    url = "/aviation/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Cityscapes"
+    url = "/cityscapes/"
+    weight = 4
