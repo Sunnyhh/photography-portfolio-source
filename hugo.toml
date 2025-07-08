@@ -1,0 +1,17 @@
+baseURL = 'https://sunnyhh.github.io/photography'
+languageCode = 'en-us'
+title = 'Photography Portfolio - Sunny'
+theme = 'hugo-gallery'
+
+[params]
+  title = "Sunny's Photography"
+  description = "Aviation, travel, and everyday moments captured through my lens"
+  author = "Ge (Sunny) Li"
+  
+[params.author]
+  name = "Ge (Sunny) Li"
+  email = "sunnyhh051008@gmail.com"
+  
+[taxonomies]
+  tag = "tags"
+  category = "categories"
