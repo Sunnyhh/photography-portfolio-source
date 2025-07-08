@@ -26,16 +26,36 @@ if [ ! -d ".git" ]; then
     git remote add origin git@github.com:Sunnyhh/photography.git
     git config user.name "Sunny Lee"
     git config user.email "sunnyhh051008@gmail.com"
+    # Initial commit
+    git add .
+    git commit -m "Initial photography site deployment"
+    git push origin main
+else
+    # Check if remote exists and has content
+    if ! git ls-remote --exit-code origin main >/dev/null 2>&1; then
+        echo "🔧 Remote repository is empty, doing initial push..."
+        git add .
+        git commit -m "Initial photography site deployment"
+        git push origin main
+    else
+        # Check if there are any changes
+        if git diff --quiet && git diff --cached --quiet; then
+            echo "📝 No changes detected, skipping deployment"
+            cd ..
+            echo "🎉 Photography deployment complete (no changes)!"
+            exit 0
+        fi
+        
+        # Add and commit changes
+        echo "📝 Adding and committing changes..."
+        git add .
+        git commit -m "Update photography site - $(date '+%Y-%m-%d %H:%M:%S')"
+        
+        # Push to GitHub Pages repository (only changed files)
+        echo "🌐 Pushing to GitHub Pages..."
+        git push origin main
+    fi
 fi
-
-# Add and commit changes
-echo "📝 Adding and committing changes..."
-git add .
-git commit -m "Update photography site - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-
-# Push to GitHub Pages repository (this will replace the entire site)
-echo "🌐 Pushing to GitHub Pages..."
-git push origin main --force
 
 # Check if push was successful
 if [ $? -eq 0 ]; then

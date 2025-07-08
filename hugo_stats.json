@@ -1,0 +1,51 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "button",
+      "div",
+      "figure",
+      "footer",
+      "h1",
+      "h2",
+      "head",
+      "header",
+      "hgroup",
+      "html",
+      "img",
+      "li",
+      "link",
+      "main",
+      "menu",
+      "meta",
+      "p",
+      "path",
+      "script",
+      "section",
+      "span",
+      "svg",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "btn",
+      "btn-square",
+      "card",
+      "featured",
+      "featured-card",
+      "galleries",
+      "gallery",
+      "gallery-item",
+      "hidden",
+      "icon-close",
+      "icon-menu",
+      "lazyload"
+    ],
+    "ids": [
+      "gallery",
+      "menu",
+      "menu-toggle"
+    ]
+  }
+}

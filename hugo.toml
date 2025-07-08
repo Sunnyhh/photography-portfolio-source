@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'Photography Portfolio - Sunny'
 theme = 'hugo-gallery'
 
+# Build optimization
+[build]
+  writeStats = true
+  noChmod = true
+  noTimes = true
+
 [params]
   title = "Sunny's Photography"
   description = "Aviation, travel, and everyday moments captured through my lens"
