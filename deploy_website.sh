@@ -24,21 +24,16 @@ if [ ! -d ".git" ]; then
     echo "🔧 Initializing git in public directory..."
     git init
     git remote add origin git@github.com:Sunnyhh/sunnyhh.github.io.git
+    git config user.name "Sunny Lee"
+    git config user.email "sunnyhh051008@gmail.com"
 fi
-
-# Create photography subdirectory structure
-# This ensures we deploy to /photography/ path
-echo "📁 Setting up photography subdirectory..."
-mkdir -p photography
-cp -r * photography/ 2>/dev/null || true
-rm -rf !(photography)
 
 # Add and commit changes
 echo "📝 Adding and committing changes..."
 git add .
 git commit -m "Deploy photography site - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
-# Push to GitHub Pages repository
+# Push to GitHub Pages repository (this will replace the entire site)
 echo "🌐 Pushing to GitHub Pages..."
 git push origin main --force
 
