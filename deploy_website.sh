@@ -23,7 +23,7 @@ cd public
 if [ ! -d ".git" ]; then
     echo "🔧 Initializing git in public directory..."
     git init
-    git remote add origin git@github.com:Sunnyhh/sunnyhh.github.io.git
+    git remote add origin git@github.com:Sunnyhh/photography.git
     git config user.name "Sunny Lee"
     git config user.email "sunnyhh051008@gmail.com"
 fi
@@ -31,7 +31,7 @@ fi
 # Add and commit changes
 echo "📝 Adding and committing changes..."
 git add .
-git commit -m "Deploy photography site - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+git commit -m "Update photography site - $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 
 # Push to GitHub Pages repository (this will replace the entire site)
 echo "🌐 Pushing to GitHub Pages..."

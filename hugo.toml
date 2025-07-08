@@ -1,4 +1,4 @@
-baseURL = 'https://sunnyhh.github.io/photography'
+baseURL = 'https://sunnyhh.github.io/photography/'
 languageCode = 'en-us'
 title = 'Photography Portfolio - Sunny'
 theme = 'hugo-gallery'
