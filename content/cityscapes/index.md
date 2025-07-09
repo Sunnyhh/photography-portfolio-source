@@ -1,6 +1,8 @@
 ---
 title: Cityscapes
 description: Urban landscapes and city life captured from unique perspectives.
+params:
+  featured: true
 resources: 
   - src: DSC_1577-Enhanced-NR.jpg
     params: 

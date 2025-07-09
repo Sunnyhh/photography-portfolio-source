@@ -14,4 +14,8 @@ resources:
     title: A Cathay Cargo Boeing 747-8F landing at London Heathrow.
   - src: JA02WJ.jpg
     title: A JAL A350-1000 landing at London Heathrow.
+  - src: DSC_2208.jpg
+    title: The Airbus A380-800 (Reg: G-XLEF) of British Airways banking out of London Heathrow.
+  - src: DSC_3010.jpg
+    title: The F-15 Eagle of 48th FW at RAF Lakenheath.
 ---
