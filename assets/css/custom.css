@@ -12,10 +12,12 @@ header > a.btn {
     flex: 0 0 auto;
 }
 
-/* Container for menu button - move to right */
+/* Container for menu button - center menu bar */
 header > ul {
     flex: 0 0 auto;
     margin-left: auto !important;
+    justify-content: center !important;
+    width: 100%;
 }
 
 /* Make the menu always visible and align right */
@@ -24,7 +26,7 @@ header > ul {
     visibility: visible !important;
     opacity: 1 !important;
     position: static !important;
-    text-align: right !important;
+    text-align: center !important;
 }
 
 /* Hide the hamburger menu button */

@@ -2,8 +2,7 @@
 title: Cityscapes
 description: Urban landscapes and city life captured from unique perspectives.
 resources: 
-  - src: DSC_1760.jpg
-    title: The Big Ben during the blue hours.
+  - src: DSC_1577-Enhanced-NR.jpg
     params: 
       cover: true
   - src: DSC_1724.jpg

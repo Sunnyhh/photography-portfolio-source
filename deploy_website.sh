@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the photography source directory
-cd /Users/sunny/Library/CloudStorage/OneDrive-Personal/GitHub/photography-portfolio
+cd /Users/sunny/Library/CloudStorage/OneDrive-Personal/GitHub/photography-portfolio-source
 
 echo "📸 Starting photography site deployment..."
 
